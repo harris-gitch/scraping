@@ -31,7 +31,7 @@ for link in movies:
    soup = BeautifulSoup(src,"lxml")
    linkm= soup.find("iframe",{"class":"auto-size"})
    links.append(linkm.attrs["src"])
-print(links)
+#print(links)
 
 file_list=[titles,rating,links]
 exported= zip_longest(*file_list)
