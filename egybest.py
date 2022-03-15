@@ -24,7 +24,7 @@ for i in range(len(movie)):
    movies.append(movie[i].attrs["href"])
    titles.append(movie_name[i].text)
    rating.append(movie_rate[i].text)
-print(movies)
+#print(movies)
 for link in movies:
    result = requests.get(link)
    src =result.content
